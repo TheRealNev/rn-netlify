@@ -57,7 +57,7 @@ a:focus,
 a:active,
 a.active {
     outline: 0;
-    color: rgb(240, 198, 130);
+    color: #95a5a6;
 }
 
 h1,
@@ -317,7 +317,7 @@ section.success a.active {
 }
 
 .floating-label-form-group-with-focus label {
-    color: rgb(240, 198, 130);
+    color: #95a5a6;
 }
 
 form .row:first-child .floating-label-form-group {
