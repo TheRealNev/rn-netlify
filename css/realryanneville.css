@@ -418,6 +418,7 @@ footer .footer-below {
     height: 75px;
     background-color: transparent;
     cursor: pointer;
+    transition: all .3s ease-in-out;
 }
 
 .portfolio-modal .close-modal:hover {
