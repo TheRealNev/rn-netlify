@@ -404,12 +404,12 @@ footer .footer-below {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 16px;
+  display: block;
 }
 
 .portfolio-modal .modal-content .item-details {
     margin: 30px 0;
 }
-
 .portfolio-modal .close-modal {
     position: absolute;
     top: 25px;
