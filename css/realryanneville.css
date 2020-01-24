@@ -426,7 +426,7 @@ footer .footer-below {
 
 .close-modal .lr {
     z-index: 1051;
-    width: 1px;
+    width: 3px;
     height: 75px;
     margin-left: 35px;
     background-color: rgb(240, 198, 130);
@@ -437,7 +437,7 @@ footer .footer-below {
 
 .close-modal .lr .rl {
     z-index: 1052;
-    width: 1px;
+    width: 3px;
     height: 75px;
     background-color: rgb(240, 198, 130);
     -webkit-transform: rotate(90deg);
