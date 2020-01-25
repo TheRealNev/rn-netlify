@@ -409,7 +409,7 @@ footer .footer-below {
 .portfolio-modal .modal-content .item-details {
     margin: 30px 0;
 }
-.portfolio-modal .modal-content .item-details a {
+.portfolio-modal .modal-content .item-details li {
   display: block;
 }
 .portfolio-modal .close-modal {
