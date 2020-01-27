@@ -99,6 +99,11 @@ header .intro-text .skills {
     font-weight: 400;
 }
 
+hr {
+  border-top: 2px solid rgb(40, 40, 40);
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px
+}
 
 .navbar {
     text-transform: uppercase;
@@ -133,17 +138,22 @@ section h2 {
 }
 
 section.success {
-    color: #e6e6e6;
+    color: rgb(230, 230, 230);
     background: #505050;
 }
 
-section.success a,
+section.success a{
+  color: rgb(40, 40, 40);
+  text-decoration: underline;
+  transition: all .3s ease-in-out;
+}
+
 section.success a:hover,
 section.success a:focus,
 section.success a:active,
 section.success a.active {
-    outline: 0;
     color: rgb(40, 40, 40);
+    text-decoration: none;
 }
 
 @media(max-width:767px) {
