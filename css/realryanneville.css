@@ -1,6 +1,7 @@
 .btn-success{
     background-color: rgba(70, 70, 70, 1);
     border-color: rgba(40, 40, 40, 1);
+    transition: all .3s ease-in-out;
 }
 
 .btn-success:hover, .btn-success:focus, .btn-success:active {
