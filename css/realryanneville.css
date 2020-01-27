@@ -149,7 +149,6 @@ section.success {
 }
 
 section.success a{
-  color: rgb(40, 40, 40);
   text-decoration: underline;
   transition: all .3s ease-in-out;
 }
@@ -362,6 +361,7 @@ footer .footer-below {
 
 .portfolio-modal .modal-content {
     background: linear-gradient(45deg, rgba(40,40,40,1), rgba(200,200,200,1));
+    color: #FFF;
     padding: 100px 0;
     min-height: 100%;
     border: 0;
@@ -381,9 +381,15 @@ footer .footer-below {
     margin-bottom: 30px;
 }
 .portfolio-modal .modal-content a {
+  text-decoration: underline;
+  transition: all .3s ease-in-out;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 16px;
+}
+
+.portfolio-modal .modal-content a:hover {
+    color: rgb(40, 40, 40);
 }
 
 .portfolio-modal .modal-content .item-details {
