@@ -1,11 +1,11 @@
 .btn-success{
-    background-color: rgba(206, 142, 0, 0.75);
-    border-color: rgba(206, 142, 0, 1);
+    background-color: rgba(70, 70, 70, 1);
+    border-color: rgba(40, 40, 40, 1);
 }
 
 .btn-success:hover, .btn-success:focus, .btn-success:active {
-    background-color: rgba(206, 142, 0, 1);
-    border-color: rgba(206, 142, 0, 1);
+    background-color: rgba(40, 40, 40, 1);
+    border-color: rgba(40, 40, 40, 1);
 }
 
 .navbar-default .navbar-nav>.page-scroll>a {
