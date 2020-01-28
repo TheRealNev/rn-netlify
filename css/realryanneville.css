@@ -29,6 +29,12 @@
 .navbar-default{
     background-color: rgba(40, 40, 40, 0.8);
 }
+
+.navbar-default .navbar-toggle {
+  border-color: #535353;
+  box-shadow: #000 2px 2px 5px 0px;
+}
+
 .logo{
     height: 100%;
 }
