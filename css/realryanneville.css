@@ -141,43 +141,6 @@ hr.heavy {
     border: 0;
 }
 
-section {
-    padding: 100px 0;
-}
-
-section h2 {
-    margin: 0;
-    font-size: 3em;
-}
-
-section.success {
-    color: rgb(230, 230, 230);
-    background: #505050;
-}
-
-section.success a{
-  text-decoration: underline;
-  transition: all .3s ease-in-out;
-}
-
-section.success a:hover,
-section.success a:focus,
-section.success a:active,
-section.success a.active {
-    color: rgb(40, 40, 40);
-    text-decoration: none;
-}
-
-@media(max-width:767px) {
-    section {
-        padding: 75px 0;
-    }
-
-    section.first {
-        padding-top: 75px;
-    }
-}
-
 #portfolio .portfolio-item {
     right: 0;
     margin: 0 0 15px;
@@ -230,7 +193,6 @@ section.success a.active {
 #portfolio * {
     z-index: 2;
 }
-
 
 .btn-outline {
     margin-top: 15px;
@@ -388,16 +350,15 @@ footer .footer-below {
     margin-bottom: 30px;
 }
 .portfolio-modal .modal-content a {
-  text-decoration: underline;
-  transition: all .3s ease-in-out;
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 4px;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 16px;
+  transition: all 0.3s ease-in-out;
 }
 
-.portfolio-modal .modal-content a:hover {
-    color: rgb(40, 40, 40);
-}
 
 .portfolio-modal .modal-content .item-details {
     margin: 30px 0;
@@ -454,15 +415,75 @@ footer .footer-below {
     text-align: center;
 }
 
-header {
+.resume {
+    color: rgb(230, 230, 230);
+    background: #505050;
+    padding: 100px 0;
     text-align: center;
-    background-image: linear-gradient(45deg, rgb(50, 50, 50), rgba(150, 150, 150, 0)), url(../img/algonquinSmall.jpg);
-    background-size: 100%;
-    background-position: center;
-    background-attachment: scroll;
-    background-repeat: no-repeat;
 }
 
+.resume h2 {
+    margin: 0;
+    font-size: 3em;
+}
+
+a.clink{
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 4px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+}
+
+a.clink:before, a.clink:after {
+  content: "";
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: rgb(150, 150, 150);
+}
+a.clink:before {
+  opacity: 0;
+  transform: translateY(-4px);
+  transition: transform 0s ease-in-out, opacity 0s;
+}
+a.clink:after {
+  opacity: 0;
+  transform: translateY(4px);
+  transition: transform 0.3s ease-in-out, opacity 0.3s;
+}
+a.clink:hover{
+  color: rgb(150, 150, 150);
+}
+a.clink:hover:before {
+  opacity: 1;
+  transform: translateY(0);
+  transition: transform 0.3s ease-in-out, opacity 0.3s;
+}
+a.clink:hover:after {
+  opacity: 1;
+  transform: translateY(0);
+  transition: transform 0s 0.3s ease-in-out, opacity 0s 0.3s;
+}
+
+
+@media(max-width:767px) {
+  .resume {
+      padding: 75px 0;
+  }
+  header {
+      text-align: center;
+      background-image: linear-gradient(45deg, rgb(50, 50, 50), rgba(150, 150, 150, 0)), url(../img/algonquinSmall.jpg);
+      background-size: 100%;
+      background-position: center;
+      background-attachment: scroll;
+      background-repeat: no-repeat;
+  }
+}
 @media(min-width: 768px) {
     header {
         text-align: center;
