@@ -38,7 +38,7 @@ a:active {
   color: #000;
   text-decoration: underline;
 }
-/* COOL LINK */
+/* Cool Link */
 a.clink{
   background-image: linear-gradient(45deg, #000 30%, #6600ff, #0000FF, #FFF 70%);
   background-position: right center;
@@ -74,12 +74,12 @@ a.clink:after {
   transform: translateY(4px);
   transition: all 0.9s ease-in-out;
 }
-a.clink:hover{
+a.clink:hover, a.clink:focus, a.clink:active, a.clink:visited {
   background-position: left center;
   color: #00000;
   transition: background-position 0.8s ease-out, background-image 0.8s ease-out;
 }
-a.clink:hover:before {
+a.clink:hover:before, a.clink:focus:before, a.clink:active:before, a.clink:visited:before {
   background-position: left center;
   color: #00000;
   transition: all 0.8s ease-out;
@@ -87,14 +87,35 @@ a.clink:hover:before {
   transform: translateY(0);
   transition: all 0.9s ease-in-out;
 }
-a.clink:hover:after {
+a.clink:hover:after, a.clink:focus:after, a.clink:active:after, a.clink:visited:after {
   background-position: left center;
   color: #00000;
   opacity: 1;
   transform: translateY(0);
   transition: all 0s 0.9s ease-in-out;
 }
-/* END COOL LINK */
+/* End Cool Link */
+
+/* Cool Button */
+.cbtn {
+  background-image: linear-gradient(45deg, #6600ff, #370089, #0000FF, #000089);
+  background-position: right top;
+  background-size: 800% auto;
+  border-radius: 10px;
+  box-sizing: border-box;
+  color: #FFF;
+  border-color: #370089;
+  background-color: #370089;
+  transition: background-position 0.8s ease-in-out, background-image 0.8s ease-in-out;
+}
+.cbtn:hover, .cbtn:focus, .cbtn:active, .cbtn:visited {
+  background-image: linear-gradient(115deg, #6600ff, #370089, #0000FF, #000089);
+  background-position: left bottom;
+  border-image: linear-gradient(115deg, #6600ff, #370089, #0000FF, #000089);
+  color: #00000;
+  transition: background-position 0.8s ease-in-out, background-image 0.8s ease-in-out, border-image 0.8s ease-in-out;
+}
+/* End Cool Button */
 
 .img-centered {
     margin: 0 auto;
@@ -201,17 +222,20 @@ header {
   height: 80vh;
   position: relative;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 header .background {
+  display: block;
   position: absolute;
-  top: 0;
+  bottom: -250px;
   z-index: -2;
   overflow: hidden;
-  height: 100vh;
-  width: 100vw;
+  width: 150vw;
 }
 header .container {
-    padding-top: 200px;
+    padding-top: 100px;
     padding-bottom: 100px;
 }
 header .intro-text {
@@ -228,9 +252,9 @@ header .intro-text .skills {
     font-size: 1.5em;
     font-weight: 400;
 }
-header img {
-    display: block;
-    margin: 0 auto 20px;
+header .header-img {
+  width: 250px;
+  margin: 0 auto 20px;
 }
 /* ∞∞∞∞∞∞∞∞∞∞ */
 /* End Header */
@@ -431,24 +455,7 @@ header img {
 form .row:first-child .floating-label-form-group {
     border-top: 1px solid #eee;
 }
-.cbtn {
-  background-image: linear-gradient(45deg, #6600ff, #370089, #0000FF, #000089);
-  background-position: right top;
-  background-size: 800% auto;
-  border-radius: 10px;
-  box-sizing: border-box;
-  color: #FFF;
-  border-color: #370089;
-  background-color: #370089;
-  transition: background-position 0.8s ease-in-out, background-image 0.8s ease-in-out;
-}
-.cbtn:hover, .cbtn:focus, .cbtn:active {
-  background-image: linear-gradient(115deg, #6600ff, #370089, #0000FF, #000089);
-  background-position: left bottom;
-  border-image: linear-gradient(115deg, #6600ff, #370089, #0000FF, #000089);
-  color: #00000;
-  transition: background-position 0.8s ease-in-out, background-image 0.8s ease-in-out, border-image 0.8s ease-in-out;
-}
+
 
 /* ∞∞∞∞∞∞∞∞ */
 /* End Form */
@@ -505,37 +512,36 @@ footer .footer-below {
 
 
 @media(max-width:768px) {
-  /* header {
-    text-align: center;
-    background-image: linear-gradient(45deg, rgb(50, 50, 50), rgba(150, 150, 150, 0)), url(../img/algonquinSmall.jpg);
-    background-size: 100%;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-  } */
   header {
-    text-align: center;
-    background-image: linear-gradient(45deg, rgb(50, 50, 50), rgba(150, 150, 150, 0)), url(../img/algonquinSmall.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center top;
-    background-repeat: no-repeat;
-    text-align: center;
     height: 50vh;
     position: relative;
     overflow: hidden;
+  }
+  header .background {
+    display: block;
+    position: absolute;
+    bottom: -100px;
+    z-index: -2;
+    overflow: hidden;
+    width: 150vw;
   }
   header .container {
     padding-top: 100px;
     padding-bottom: 50px;
   }
-
+  header .header-img {
+    width: 150px;
+  }
   header .intro-text .name {
     font-size: 2em;
   }
   header .intro-text .skills {
     font-size: 1em;
   }
+  .navbar-fixed-top {
+    padding: 0px 0;
+  }
+
   #portfolio {
     padding: 24px 0;
   }
