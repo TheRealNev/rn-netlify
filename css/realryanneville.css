@@ -75,6 +75,9 @@ a.clink{
   font-weight: 700;
   transition: background-position 0.8s ease-out, background-image 0.8s ease-in-out;
 }
+a.clink.dark{
+  background-image: linear-gradient(45deg, #6600ff 30%, #370089, #0000ff, #000 70%);
+}
 a.clink:before, a.clink:after {
   content: "";
   position: absolute;
@@ -85,6 +88,9 @@ a.clink:before, a.clink:after {
   background-image: linear-gradient(45deg, #000 30%, #0000FF, #6600ff, #FFF 70%);
   background-position: right center;
   background-size: 400% auto;
+}
+a.clink.dark:before, a.clink.dark:after {
+  background-image: linear-gradient(45deg, #6600ff 30%, #370089, #0000ff, #000 70%);
 }
 a.clink:before {
   opacity: 0;
