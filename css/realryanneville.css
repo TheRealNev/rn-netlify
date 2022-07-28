@@ -188,7 +188,7 @@ hr.heavy {
   font-weight: 700;
 }
 .navbar-default {
-  background-color: rgba(40, 40, 40, 0.8);
+  background-color: rgba(0, 0, 0, 0.8);
   border: 0;
 }
 .navbar-default .navbar-nav .page-scroll a {
