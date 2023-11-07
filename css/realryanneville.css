@@ -99,13 +99,7 @@ a:active {
 }
 /* Cool Link */
 a.clink {
-  background-image: linear-gradient(
-    45deg,
-    #000 30%,
-    #6600ff,
-    #0000ff,
-    #fff 70%
-  );
+  background-image: linear-gradient(45deg, #000 30%, #6600ff, #0000ff, #fff 70%);
   background-position: right center;
   background-size: 400% auto;
   -webkit-background-clip: text;
@@ -116,17 +110,10 @@ a.clink {
   padding-bottom: 4px;
   text-transform: uppercase;
   font-weight: 700;
-  transition: background-position 0.8s ease-out,
-    background-image 0.8s ease-in-out;
+  transition: background-position 0.8s ease-out, background-image 0.8s ease-in-out;
 }
 a.clink.dark {
-  background-image: linear-gradient(
-    45deg,
-    #6600ff 30%,
-    #370089,
-    #0000ff,
-    #000 70%
-  );
+  background-image: linear-gradient(45deg, #6600ff 30%, #370089, #0000ff, #000 70%);
 }
 a.clink:before,
 a.clink:after {
@@ -136,25 +123,13 @@ a.clink:after {
   left: 0;
   right: 0;
   height: 2px;
-  background-image: linear-gradient(
-    45deg,
-    #000 30%,
-    #0000ff,
-    #6600ff,
-    #fff 70%
-  );
+  background-image: linear-gradient(45deg, #000 30%, #0000ff, #6600ff, #fff 70%);
   background-position: right center;
   background-size: 400% auto;
 }
 a.clink.dark:before,
 a.clink.dark:after {
-  background-image: linear-gradient(
-    45deg,
-    #6600ff 30%,
-    #370089,
-    #0000ff,
-    #000 70%
-  );
+  background-image: linear-gradient(45deg, #6600ff 30%, #370089, #0000ff, #000 70%);
 }
 a.clink:before {
   opacity: 0;
@@ -171,15 +146,14 @@ a.clink:focus,
 a.clink:active,
 a.clink:visited {
   background-position: left center;
-  color: #00000;
-  transition: background-position 0.8s ease-out,
-    background-image 0.8s ease-in-out;
+  color: #fff;
+  transition: background-position 0.8s ease-out, background-image 0.8s ease-in-out;
 }
 a.clink:hover:before,
 a.clink:focus:before,
 a.clink:active:before {
   background-position: left center;
-  color: #00000;
+  color: #fff;
   transition: all 0.8s ease-in-out;
   opacity: 1;
   transform: translateY(0);
@@ -189,7 +163,7 @@ a.clink:hover:after,
 a.clink:focus:after,
 a.clink:active:after {
   background-position: left center;
-  color: #00000;
+  color: #fff;
   opacity: 1;
   transform: translateY(0);
   transition: all 0s 0.9s ease-in-out;
@@ -209,8 +183,7 @@ button {
   box-sizing: border-box;
   color: #fff;
   background-color: #370089;
-  transition: background-position 0.8s ease-in-out,
-    background-image 1s ease-in-out;
+  transition: background-position 0.8s ease-in-out, background-image 1s ease-in-out;
 }
 .cbtn:hover,
 .cbtn:focus,
@@ -218,9 +191,8 @@ button {
 .cbtn:visited {
   background-image: linear-gradient(115deg, #6600ff, #370089, #0000ff, #000089);
   background-position: left bottom;
-  color: #00000;
-  transition: background-position 0.8s ease-in-out,
-    background-image 1s ease-in-out;
+  color: #fff;
+  transition: background-position 0.8s ease-in-out, background-image 1s ease-in-out;
 }
 /* End Cool Button */
 .cropped {
@@ -322,11 +294,7 @@ hr.heavy {
 /* Header */
 /* ∞∞∞∞∞∞ */
 header {
-  background-image: linear-gradient(
-    45deg,
-    rgb(50, 50, 50),
-    rgba(150, 150, 150, 0)
-  );
+  background-image: linear-gradient(45deg, rgb(50, 50, 50), rgba(150, 150, 150, 0));
   background-size: cover;
   background-attachment: fixed;
   background-position: center top;
@@ -402,8 +370,7 @@ header .header-img {
   );
   background-position: right center;
   background-size: 400%;
-  transition: opacity ease-in-out 0.4s,
-    background-position 0.8s 0.3s ease-in-out,
+  transition: opacity ease-in-out 0.4s, background-position 0.8s 0.3s ease-in-out,
     background-image 0.8s 0.3s ease-in-out;
 }
 #portfolio .portfolio-item .portfolio-link .caption:hover {
@@ -466,11 +433,7 @@ header .header-img {
 /* Modals */
 /* ∞∞∞∞∞∞ */
 .portfolio-modal .modal-content {
-  background: linear-gradient(
-    45deg,
-    rgba(40, 40, 40, 1),
-    rgba(200, 200, 200, 1)
-  );
+  background: linear-gradient(45deg, rgba(40, 40, 40, 1), rgba(200, 200, 200, 1));
   color: #fff;
   padding: 12px 0;
   min-height: 100%;
@@ -512,11 +475,7 @@ header .header-img {
 .portfolio-modal .modal-content .quote:before {
   font-family: 'Georgia', 'Montserrat', serif;
   content: '\201C';
-  background-image: linear-gradient(
-    45deg,
-    rgba(0, 0, 255, 0.5),
-    rgba(102, 0, 255, 0.7)
-  );
+  background-image: linear-gradient(45deg, rgba(0, 0, 255, 0.5), rgba(102, 0, 255, 0.7));
   background-position: center;
   background-size: 100% auto;
   -webkit-background-clip: text;
