@@ -433,9 +433,9 @@ header .header-img {
 /* Modals */
 /* ∞∞∞∞∞∞ */
 .portfolio-modal .modal-content {
-  background: linear-gradient(45deg, rgba(40, 40, 40, 1), rgba(200, 200, 200, 1));
+  background: linear-gradient(180deg, rgba(10, 10, 10, 1), rgba(100, 100, 100, 1));
   color: #fff;
-  padding: 12px 0;
+  padding: 0;
   min-height: 100%;
   border: 0;
   border-radius: 0;
@@ -448,13 +448,27 @@ header .header-img {
   max-width: 960px;
   margin: 0 auto;
 }
+.portfolio-modal .header-bg.liberty-bg {
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.5)),
+    url('../img/portfolio/libertyMutual/styleOverview.png');
+}
+
+.portfolio-modal .header-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
 .portfolio-modal .example-bg {
-  min-height: 300px;
+  height: 40vh;
+  max-height: 350px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
 }
-
 .portfolio-modal .modal-content h2 {
   margin: 0;
   font-size: 2em;
@@ -487,12 +501,14 @@ header .header-img {
   font-size: 15em;
   z-index: -1;
 }
+
 .portfolio-modal .close-modal {
-  position: absolute;
-  top: 25px;
-  right: 25px;
-  width: 50px;
-  height: 50px;
+  position: fixed;
+  z-index: 2;
+  top: 24px;
+  right: 24px;
+  width: 48px;
+  height: 48px;
   background-color: transparent;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
@@ -501,16 +517,17 @@ header .header-img {
   opacity: 0.5;
 }
 .close-modal .lr {
-  margin-left: 47px;
+  position: absolute;
+  left: 24px;
+  width: 2px;
   background-color: #fff;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 .close-modal .lr .rl {
-  z-index: 1051;
-  width: 3px;
-  height: 50px;
+  width: 2px;
+  height: 48px;
   background-color: #fff;
   -webkit-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
@@ -672,5 +689,9 @@ footer .footer-below {
   }
   #resume {
     padding: 24px 0;
+  }
+
+  .portfolio-modal .liberty-bg {
+    height: 25vh;
   }
 }
