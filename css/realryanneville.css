@@ -112,9 +112,6 @@ a.clink {
   font-weight: 700;
   transition: background-position 0.8s ease-out, background-image 0.8s ease-in-out;
 }
-a.clink.dark {
-  background-image: linear-gradient(45deg, #6600ff 30%, #370089, #0000ff, #000 70%);
-}
 a.clink:before,
 a.clink:after {
   content: '';
@@ -127,10 +124,7 @@ a.clink:after {
   background-position: right center;
   background-size: 400% auto;
 }
-a.clink.dark:before,
-a.clink.dark:after {
-  background-image: linear-gradient(45deg, #6600ff 30%, #370089, #0000ff, #000 70%);
-}
+
 a.clink:before {
   opacity: 0;
   transform: translateY(-4px);
@@ -167,6 +161,20 @@ a.clink:active:after {
   opacity: 1;
   transform: translateY(0);
   transition: all 0s 0.9s ease-in-out;
+}
+a.clink.dark {
+  display: inline-flex;
+  background-position: bottom left;
+  background-size: 25% 25%;
+  background-image: linear-gradient(45deg, #6600ff 20%, #0000ff, #000 70%);
+}
+a.clink.dark:hover,
+a.clink.dark:focus,
+a.clink.dark:active,
+a.clink.dark:visited {
+  background-position: top right;
+  color: #fff;
+  transition: background-position 0.8s ease-out, background-image 0.8s ease-in-out;
 }
 /* End Cool Link */
 
@@ -237,6 +245,8 @@ hr.heavy {
   font-weight: 700;
 }
 .navbar-default {
+  backdrop-filter: blur(4px);
+  box-shadow: 0px 4px 8px 1px rgba(0, 0, 0, 0.5);
   background-color: rgba(0, 0, 0, 0.8);
   border: 0;
 }
@@ -485,11 +495,12 @@ header .header-img {
   display: block;
 }
 .portfolio-modal .modal-content .quote {
-  max-width: 768px;
+  max-width: 920px;
   z-index: 2;
   margin-left: auto;
   margin-right: auto;
   position: relative;
+  text-transform: none !important;
 }
 .portfolio-modal .modal-content .quote:before {
   font-family: 'Georgia', 'Montserrat', serif;
@@ -647,7 +658,7 @@ footer .footer-below {
 
 @media only screen and (max-width: 768px) {
   header {
-    height: 55vh;
+    height: 65vh;
     position: relative;
     overflow: hidden;
   }
